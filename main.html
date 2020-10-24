@@ -7,6 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h2>loop using for loop</h2>
+    <br>
+    <h4>enter a number</h4>
+    <input type ="number" value ="" placeholder = "enter a number" id="i1">
+    <button onclick="fun()">click here</button>
+    <p id="p1"></p>
+
+    <script>
+        function fun(){
+            var n = document.getElementById("i1").value;
+            var i;
+            text = "";
+            for(i = 0; i<n; i++){
+                text = text + i + "<br>";
+
+            }
+            document.getElementById("p1").innerHTML = text;
+        }
+    </script>
 </body>
 </html>
