@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>using while loop</h2>
+    <br>
+    <h4>enter a number</h4>
+    <input type="number" value="" placeholder="enter a number" id="i1">
+    <button onclick="fun()">click here</button>
+    <p id="p1"></p>
+    <script>
+        function fun(){
+            var n = document.getElementById("i1").value;
+            var i = 0;
+            var text = "";
+            while(i<n){
+                text = text + i + "<br>";
+                i++;
+
+
+            }
+            document.getElementById("p1").innerHTML = text;
+        }
+    </script>
     
 </body>
 </html>
