@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>input a number</h2>
+    <input type="text" value="" id="i1">
+    <button onclick="my()">click here</button>
+    <p id="p1"></p>
+    <script>
+        function my(){
+        var i = document.getElementById("i1").value;
+       var n = (isNaN(i)== true) ? "enter a number" : "jst wait";
+       document.getElementById("p1").innerHTML = n;
+    }
+    </script>
     
 </body>
 </html>
